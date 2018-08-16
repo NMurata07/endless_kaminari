@@ -1,0 +1,611 @@
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosts (20180816063449)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "author" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180816063449"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 31f4"], ["author", "3bab23f5cbd0"], ["body", "4e9602a654900bfbd5da9507d627a84fcf22f000b813f597b7a2a74aff1eb20f"], ["created_at", "2018-08-16 06:35:34.765124"], ["updated_at", "2018-08-16 06:35:34.765124"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 3752"], ["author", "5f1b57e563fd"], ["body", "5704f056613e3709326a91998a3b2105d9d557f266ff08d422446e5fa06d5890"], ["created_at", "2018-08-16 06:35:34.776956"], ["updated_at", "2018-08-16 06:35:34.776956"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 1403"], ["author", "7a75e602faa5"], ["body", "6cad16026305931c892b74efc9c88490b43277d9352862a790aa486edc3f6bf9"], ["created_at", "2018-08-16 06:35:34.782035"], ["updated_at", "2018-08-16 06:35:34.782035"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post a958"], ["author", "6d3372229695"], ["body", "f64d55d12af1a668fb2f7238a0710d67b08411cc84b8f5661ae61624f6e357fd"], ["created_at", "2018-08-16 06:35:34.787656"], ["updated_at", "2018-08-16 06:35:34.787656"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 377a"], ["author", "9a202a6e2a6e"], ["body", "1aec1cb9292b4091b6912d61cfd69da76baf65d1226b1bbd04e3fad47c72792e"], ["created_at", "2018-08-16 06:35:34.793178"], ["updated_at", "2018-08-16 06:35:34.793178"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 3a8a"], ["author", "76a18da102f8"], ["body", "e72395888fbe6523387abfe4bedd5d39a1a82c56dc87cb9e221cafc580bfeb19"], ["created_at", "2018-08-16 06:35:34.799000"], ["updated_at", "2018-08-16 06:35:34.799000"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 5ce1"], ["author", "6de040303125"], ["body", "c77c5ff8edfa9772b4b060cba771f5304d962c5b3d0110aaadff786d23f7ddbd"], ["created_at", "2018-08-16 06:35:34.805948"], ["updated_at", "2018-08-16 06:35:34.805948"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post b674"], ["author", "467142090219"], ["body", "767c740b74f375af751c84e67acfbb2a0a0d97a45ee9c341c7e28be8e89e33cd"], ["created_at", "2018-08-16 06:35:34.811577"], ["updated_at", "2018-08-16 06:35:34.811577"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post e5b6"], ["author", "e8e7f67fc522"], ["body", "f1aaede0be51cfb33a4b380aa77435381dedc986dc41cec9334a4aa74b085025"], ["created_at", "2018-08-16 06:35:34.817670"], ["updated_at", "2018-08-16 06:35:34.817670"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 38fe"], ["author", "5b8635739e20"], ["body", "3ef02011b96c80fa225471c3c4caa2473de5fe50a9f9cc3d0ac0a58d27fa4257"], ["created_at", "2018-08-16 06:35:34.822647"], ["updated_at", "2018-08-16 06:35:34.822647"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post edcb"], ["author", "f26fac050412"], ["body", "bf379eb480d927e9858ce3bc772a673a231c2542f33017031fba20c7f6d55ff1"], ["created_at", "2018-08-16 06:35:34.827591"], ["updated_at", "2018-08-16 06:35:34.827591"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post ecc6"], ["author", "0e024e5f310a"], ["body", "5474302bd91509986e561e3dfc88bc3a299219f7ce4b6fcef07bbfc5dcdd0dea"], ["created_at", "2018-08-16 06:35:34.833709"], ["updated_at", "2018-08-16 06:35:34.833709"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 9320"], ["author", "e54fe30ec8a0"], ["body", "0e1744c4e3ae5dc75a08942cf1d543413875f2a3400d643ba735d3e6515465f4"], ["created_at", "2018-08-16 06:35:34.838987"], ["updated_at", "2018-08-16 06:35:34.838987"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 95a0"], ["author", "1cb0fde283bc"], ["body", "5165a869bffd901e8b42b22bfa3f1c74d3df7f1eaeed1f40709a6b1a70aff45d"], ["created_at", "2018-08-16 06:35:34.844329"], ["updated_at", "2018-08-16 06:35:34.844329"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 8705"], ["author", "15f9a325c295"], ["body", "99a2a25a974437529e30b9ef07e6ab3faa0f9e989cbeabf7154af882cfc09e08"], ["created_at", "2018-08-16 06:35:34.849526"], ["updated_at", "2018-08-16 06:35:34.849526"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 9dd4"], ["author", "ec28f4b30323"], ["body", "da10f6f5f3137a0a502671a8fc0b0609bcc0de52cebe00962d827f86065ccb99"], ["created_at", "2018-08-16 06:35:34.855432"], ["updated_at", "2018-08-16 06:35:34.855432"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 568c"], ["author", "aa079924da02"], ["body", "daeed96e5e99c53b9425a72991e1014163f111e59c8a4dbd8906dfc240fd9def"], ["created_at", "2018-08-16 06:35:34.861639"], ["updated_at", "2018-08-16 06:35:34.861639"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 90b6"], ["author", "1327690d9345"], ["body", "f7e99d6227a4e1fe42e2a82a85bf5ce557d8e21437632d43dda95f95ff241f56"], ["created_at", "2018-08-16 06:35:34.866119"], ["updated_at", "2018-08-16 06:35:34.866119"]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 6aef"], ["author", "3853056c3729"], ["body", "e322ddc963f9bd4f55c0e49fddfa4fc77ad1faaf008c0f10d901c66990ff6adb"], ["created_at", "2018-08-16 06:35:34.872331"], ["updated_at", "2018-08-16 06:35:34.872331"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post f9f4"], ["author", "bc0f1d35d543"], ["body", "a4afcb1aa4450d1d8734c0f0fdac29c047f9fb294349639d6e7942369ccfde7a"], ["created_at", "2018-08-16 06:35:34.877020"], ["updated_at", "2018-08-16 06:35:34.877020"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 180d"], ["author", "f292f2fc03f9"], ["body", "b120d69592d2da5c1ed0ac3b073c5a7c5dd3e3679f445d72aa40046ebe383188"], ["created_at", "2018-08-16 06:35:34.880768"], ["updated_at", "2018-08-16 06:35:34.880768"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 1f48"], ["author", "de169112d05c"], ["body", "f451de494e65e54eba338292036f9a658b4647e51927713b37d9f26ce5aaae3b"], ["created_at", "2018-08-16 06:35:34.885235"], ["updated_at", "2018-08-16 06:35:34.885235"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 3711"], ["author", "198d47d7ab27"], ["body", "6a2398a19869c42194e8d799df437aae1e02e693a22df9d76cd557858c1b8d3a"], ["created_at", "2018-08-16 06:35:34.891684"], ["updated_at", "2018-08-16 06:35:34.891684"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 3ef2"], ["author", "099d18fe5609"], ["body", "9c591b7d12ed10e353f9baee31a4f0b5ba6536955195e3af5dc5b34180ffd9a5"], ["created_at", "2018-08-16 06:35:34.895493"], ["updated_at", "2018-08-16 06:35:34.895493"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 3566"], ["author", "8308c85e8685"], ["body", "bd4a38db8c6a48979b4b0e2db5453ef6cf80c4949d31d05d9d89542a9ecb3b42"], ["created_at", "2018-08-16 06:35:34.900091"], ["updated_at", "2018-08-16 06:35:34.900091"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 6d63"], ["author", "ca80cd670cb6"], ["body", "05fdf3aada13b0b88a69fb65a6add34248bdf9973095307bd58f3404b766d3d5"], ["created_at", "2018-08-16 06:35:34.904815"], ["updated_at", "2018-08-16 06:35:34.904815"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 9776"], ["author", "3a8fff1ebd5a"], ["body", "40f9a94081daccdc04066a837d212ad7f54f3e331e6d763ff9844fc83c674808"], ["created_at", "2018-08-16 06:35:34.909415"], ["updated_at", "2018-08-16 06:35:34.909415"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post ec76"], ["author", "8760bf978d75"], ["body", "a2ecc4237aa17947ab9338ced675e9fa9d5047d049733ee1225c05ad4bd462a4"], ["created_at", "2018-08-16 06:35:34.914263"], ["updated_at", "2018-08-16 06:35:34.914263"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post c7e3"], ["author", "79f2ce30ec3f"], ["body", "da946466ebed7fd4bfccbe0ffe9c374a9285619ba4f99e4626d68487b6863969"], ["created_at", "2018-08-16 06:35:34.918529"], ["updated_at", "2018-08-16 06:35:34.918529"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post df0a"], ["author", "a246703bcc89"], ["body", "5a4d27d19087402472c64e64e38da0971a58b4587ceddf76560ef8665cb2f63f"], ["created_at", "2018-08-16 06:35:34.924423"], ["updated_at", "2018-08-16 06:35:34.924423"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 46cb"], ["author", "4f7f61ecbaa1"], ["body", "3757a7ddf52516621a1a54ea9a05b028c460def3c8cb0489175259c6a4d48dd0"], ["created_at", "2018-08-16 06:35:34.929199"], ["updated_at", "2018-08-16 06:35:34.929199"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 7648"], ["author", "6bdf480082da"], ["body", "51ca27fa6816b359afa364335e37ff7bd2d1d24f05f869ddffc36ceef9b5c35a"], ["created_at", "2018-08-16 06:35:34.933805"], ["updated_at", "2018-08-16 06:35:34.933805"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 737b"], ["author", "5493cce50a6c"], ["body", "d4b8846c26ed23da4d24b665dff8eff5b8135f0ea857271685e69fb4f6b834ee"], ["created_at", "2018-08-16 06:35:34.939825"], ["updated_at", "2018-08-16 06:35:34.939825"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post e522"], ["author", "ac0581ac19a1"], ["body", "d3a38e1b432ef3eb2df9c50172a44777335ad639cbca4f519f7110f90bae9fa9"], ["created_at", "2018-08-16 06:35:34.944047"], ["updated_at", "2018-08-16 06:35:34.944047"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post a84b"], ["author", "baa3c2cb2d8e"], ["body", "136bf43575737ad36883ae32e4472a081829fc5919e5e67e49b8bb1343aae764"], ["created_at", "2018-08-16 06:35:34.948310"], ["updated_at", "2018-08-16 06:35:34.948310"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post e9aa"], ["author", "7dbe34389552"], ["body", "f32c0e0ad9ff2e1687d1f15779c93367212d000058511e8089d39adf6ef05c8b"], ["created_at", "2018-08-16 06:35:34.953510"], ["updated_at", "2018-08-16 06:35:34.953510"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 554f"], ["author", "63f68b9ee733"], ["body", "988395328b7773663fae0982aa947b8922ad4326e0d86ccd322443d5ec665b35"], ["created_at", "2018-08-16 06:35:34.958628"], ["updated_at", "2018-08-16 06:35:34.958628"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post fafe"], ["author", "1622af2ef874"], ["body", "deb58195dfd06eb177f2f0391ed427f681f6a00c67a9e67ce7c321a65deb6416"], ["created_at", "2018-08-16 06:35:34.963702"], ["updated_at", "2018-08-16 06:35:34.963702"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 7b9d"], ["author", "d56c4e13ef04"], ["body", "ced016d4a6f23e919c433c3057a9913fa05ceacdd08c2651ce21565099c0f129"], ["created_at", "2018-08-16 06:35:34.967962"], ["updated_at", "2018-08-16 06:35:34.967962"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 1cfa"], ["author", "726411a2e97b"], ["body", "3b87710b1103ddaef3cfeb4460028fe873358e0026c55292c03f07039201e5ab"], ["created_at", "2018-08-16 06:35:34.973964"], ["updated_at", "2018-08-16 06:35:34.973964"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post dcc9"], ["author", "808669891df8"], ["body", "0d2d89c4521f9ba61a2e6a10088c3a2e6d68b63e4d50aed1e61e074e427e89b6"], ["created_at", "2018-08-16 06:35:34.978779"], ["updated_at", "2018-08-16 06:35:34.978779"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post f093"], ["author", "8a2cd407ba1b"], ["body", "a46ca5321904c52f4c3327d753d111f0b3650dd4efedf72852b1fae658af9b5e"], ["created_at", "2018-08-16 06:35:34.982707"], ["updated_at", "2018-08-16 06:35:34.982707"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 47cc"], ["author", "b225b978510a"], ["body", "533a53a9f2dbac6d0f908c26650d6bdd319d4cd70a28520b8510ac1ef6f7d47a"], ["created_at", "2018-08-16 06:35:34.988356"], ["updated_at", "2018-08-16 06:35:34.988356"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post c416"], ["author", "167f4a767a85"], ["body", "94ff47b1eef6fb834c547c74a006bb69727c737f75f9f6543c62f9439f1ac18f"], ["created_at", "2018-08-16 06:35:34.994336"], ["updated_at", "2018-08-16 06:35:34.994336"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 8ff3"], ["author", "a73fd442e716"], ["body", "b415a31abe5ff32130e0ad3f69fe03255c8647a2711ad5977532b02bd0f9411a"], ["created_at", "2018-08-16 06:35:34.998806"], ["updated_at", "2018-08-16 06:35:34.998806"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post e778"], ["author", "844e5fefceae"], ["body", "e9ea866a52b24a8b91714fe489e4803bdd75d06889b1b12c3064ae0e4808c3d1"], ["created_at", "2018-08-16 06:35:35.004286"], ["updated_at", "2018-08-16 06:35:35.004286"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 4869"], ["author", "5cfe2bd50983"], ["body", "86c3a5eef85c00c3ddeb2a4beb86504160c0caa588eb1cb37e2f32cd3028e53e"], ["created_at", "2018-08-16 06:35:35.010598"], ["updated_at", "2018-08-16 06:35:35.010598"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post aff6"], ["author", "a37e9bc49c02"], ["body", "b803e6e683ed98cac84463584386253a5e855d806a1112fc3853cecb3dd6153e"], ["created_at", "2018-08-16 06:35:35.014725"], ["updated_at", "2018-08-16 06:35:35.014725"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 3eb1"], ["author", "945469a7a653"], ["body", "f652aeaa75fb4e762f8ed66bf8f74fb1637e864da158867b33a7338adb08d30d"], ["created_at", "2018-08-16 06:35:35.020625"], ["updated_at", "2018-08-16 06:35:35.020625"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post c3e5"], ["author", "b6162e23a32b"], ["body", "29d63bbb917ddf2f3f573749b56814a1863c98bea3adc29eb8941946c5d3cd1d"], ["created_at", "2018-08-16 06:35:35.026046"], ["updated_at", "2018-08-16 06:35:35.026046"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post a4ef"], ["author", "69270138b68e"], ["body", "b3564dbe645522392bb4e3b7a4967f2a97958400fee31663d39db6b3461a73c3"], ["created_at", "2018-08-16 06:35:35.030656"], ["updated_at", "2018-08-16 06:35:35.030656"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 0ea3"], ["author", "cd7008694f02"], ["body", "7a1eb32842e121e312f48513ff3f886557bd8ce86bba713e2afabafdb914b005"], ["created_at", "2018-08-16 06:35:35.035200"], ["updated_at", "2018-08-16 06:35:35.035200"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 76d2"], ["author", "d78c891aa5cb"], ["body", "ee55456075742b74d7b471aaedf2923e1e3cf43c37e7b532e69f5baec655a407"], ["created_at", "2018-08-16 06:35:35.041405"], ["updated_at", "2018-08-16 06:35:35.041405"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 9915"], ["author", "3d3659e18a93"], ["body", "1ee5793f1790acc92177ca4b4d8ff5ee89346477056c58c24d7d243a06d6bbb9"], ["created_at", "2018-08-16 06:35:35.046368"], ["updated_at", "2018-08-16 06:35:35.046368"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 07fc"], ["author", "b6519cdda202"], ["body", "c7d01691956adcb5b0145229bdf9df670abeed2749ec8472e13c17fdb61c5f03"], ["created_at", "2018-08-16 06:35:35.050999"], ["updated_at", "2018-08-16 06:35:35.050999"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 265a"], ["author", "d7f55510f963"], ["body", "89d194e4bab2d6cb2fe42c6af66d0bd62ce61e391b279d715dd7e2438602e5df"], ["created_at", "2018-08-16 06:35:35.055546"], ["updated_at", "2018-08-16 06:35:35.055546"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 7ef7"], ["author", "10795b2fcc16"], ["body", "dd27c5118a42f2b1ba9666caf4d01704ea4f581ceb7f74bcd378b633b3eadc98"], ["created_at", "2018-08-16 06:35:35.059831"], ["updated_at", "2018-08-16 06:35:35.059831"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post a9f5"], ["author", "4a75baf9f3b7"], ["body", "cac2361f5cffb9708143cf1a0a527c509cb67fee89b264c3fb9b5737b62d8c1c"], ["created_at", "2018-08-16 06:35:35.063847"], ["updated_at", "2018-08-16 06:35:35.063847"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 0e65"], ["author", "2b0d430d8fa4"], ["body", "20ac3d7adad7a7bddc4a64c5e308df73677a703753ec01d08fcc9e4e87b8d12f"], ["created_at", "2018-08-16 06:35:35.068009"], ["updated_at", "2018-08-16 06:35:35.068009"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 0453"], ["author", "5c06094f8530"], ["body", "c1b7e7a83c5e434bd3bc1f762e100dad92d40aba962431ccf2a1d2081010425c"], ["created_at", "2018-08-16 06:35:35.071706"], ["updated_at", "2018-08-16 06:35:35.071706"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post f0f2"], ["author", "04ff03bfadc5"], ["body", "0022d315aba69db012c949fef2b46f2f4e2c52cb79f2826fbd96a88fb679fd17"], ["created_at", "2018-08-16 06:35:35.075667"], ["updated_at", "2018-08-16 06:35:35.075667"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 44dd"], ["author", "11819148f451"], ["body", "2b02b2ca18958b5d634ee52d21affac6e5fd89830ac35983622f64068f0f54ac"], ["created_at", "2018-08-16 06:35:35.079441"], ["updated_at", "2018-08-16 06:35:35.079441"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 3a51"], ["author", "13dd77685584"], ["body", "10ef4d95084bab67feb62b3bda2608ca2da41be8d9c75ba6ed987f60200b41d7"], ["created_at", "2018-08-16 06:35:35.087511"], ["updated_at", "2018-08-16 06:35:35.087511"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 71b7"], ["author", "8c582b5fbbab"], ["body", "f08a5564324b1282298414bce496008a3689ba592274352cd4c4b37cdef03c58"], ["created_at", "2018-08-16 06:35:35.091591"], ["updated_at", "2018-08-16 06:35:35.091591"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post b1e6"], ["author", "675717782206"], ["body", "5593171ea8e2c9952f3580fa8f20a33633d356851acd802e07ca4ad8e106baae"], ["created_at", "2018-08-16 06:35:35.095480"], ["updated_at", "2018-08-16 06:35:35.095480"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 3f6f"], ["author", "68ec6684068d"], ["body", "7b35faaefece06d1a77e5e3bbbb8fc9c712431858a1548852b165f813469d7f0"], ["created_at", "2018-08-16 06:35:35.099453"], ["updated_at", "2018-08-16 06:35:35.099453"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 6ce2"], ["author", "efa9e5ac611d"], ["body", "5b9edba427604ae5149fedee5145267a3f54efb411605634894a09395e91025f"], ["created_at", "2018-08-16 06:35:35.103765"], ["updated_at", "2018-08-16 06:35:35.103765"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post c218"], ["author", "fc1bd4b30afe"], ["body", "018f050eb6436d476203f9406b7c79a80d49655425e90ab1659e93a903cff8fd"], ["created_at", "2018-08-16 06:35:35.108671"], ["updated_at", "2018-08-16 06:35:35.108671"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 5979"], ["author", "29388b21c2d2"], ["body", "836e960adedb00bdd20ff05400b6c6b5dee49a591454e84710d287c61b5c56d2"], ["created_at", "2018-08-16 06:35:35.113654"], ["updated_at", "2018-08-16 06:35:35.113654"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post 26ac"], ["author", "8b417cfb7b3b"], ["body", "deaec5abb3ca7288c4b66753b9fb7f268b09b20c0a8ff2b5937b6245eaa18660"], ["created_at", "2018-08-16 06:35:35.118599"], ["updated_at", "2018-08-16 06:35:35.118599"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post f6b3"], ["author", "de349fdccbb5"], ["body", "8ea2e6b90b5ae3331895a769a4f4b5049be4464917b1b4a6493cb1637feba836"], ["created_at", "2018-08-16 06:35:35.123115"], ["updated_at", "2018-08-16 06:35:35.123115"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post c7cd"], ["author", "ea318913aa87"], ["body", "2de3d7815c96e27fd3898245321e314c92f9e9fca085ca163526b35ecd08919e"], ["created_at", "2018-08-16 06:35:35.128529"], ["updated_at", "2018-08-16 06:35:35.128529"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post 5b6c"], ["author", "7959c2393d2f"], ["body", "009de51fa6cf9a0f3055e2344a91b88e82276fe127959c2b8f95bf086aa5cd84"], ["created_at", "2018-08-16 06:35:35.133095"], ["updated_at", "2018-08-16 06:35:35.133095"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Post a236"], ["author", "bf0b348c4436"], ["body", "d382074780a6bcaee0babb988c24f5d7720cea6d6ab0bd7374da2750f981d908"], ["created_at", "2018-08-16 06:35:35.138383"], ["updated_at", "2018-08-16 06:35:35.138383"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "author", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Post dc4f"], ["author", "8721b20b2e58"], ["body", "b68f6ba18b2aff650df7cfb425243a861b513bcd6d1606d764b0cecebb27602e"], ["created_at", "2018-08-16 06:35:35.143618"], ["updated_at", "2018-08-16 06:35:35.143618"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+
+
+Started GET "/useres" for ::1 at 2018-08-16 15:38:27 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/useres"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.7ms)
+  Rendered /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.4ms)
+  Rendered /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (217.4ms)
+  Rendered /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (175.5ms)
+  Rendered /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nobuharumurata/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (361.7ms)
+
+
+Started GET "/posts" for ::1 at 2018-08-16 15:38:37 +0900
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 25 OFFSET 0
+  Rendered posts/_post.html.erb (7.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (63.9ms)
+Completed 200 OK in 949ms (Views: 945.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-08-16 15:38:38 +0900
+
+
+Started GET "/assets/scaffolds.self-18b0ab31a2b3bb60682a9547f396a74c5383e5b10080c532a8472ad5c3525e56.css?body=1" for ::1 at 2018-08-16 15:38:38 +0900
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-08-16 15:38:38 +0900
+
+
+Started GET "/assets/jquery.infinitescroll.self-1ea8b2b51502ba9419567d1ee98f1fa1fcdbaa6ec3c5c4b6d1dcd4f1f6866c63.js?body=1" for ::1 at 2018-08-16 15:38:38 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2018-08-16 15:38:38 +0900
+
+
+Started GET "/posts" for ::1 at 2018-08-16 15:40:11 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 25 OFFSET 0
+  Rendered posts/_post.html.erb (8.5ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (82.7ms)
+Completed 200 OK in 425ms (Views: 407.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts" for ::1 at 2018-08-16 15:42:29 +0900
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 25 OFFSET 0
+  Rendered posts/_post.html.erb (7.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 195ms (Views: 193.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.infinitescroll.self-395408a3dc9c3db2b5c200b8722a13a60898c861633b99e6e250186adffd1370.js?body=1" for ::1 at 2018-08-16 15:42:29 +0900
+
+
+Started GET "/assets/application.self-49cff490a287832e4464db9e0674047050f0021e188f41cddece9d9e086664b2.js?body=1" for ::1 at 2018-08-16 15:42:29 +0900
+
+
+Started GET "/posts" for ::1 at 2018-08-16 15:44:20 +0900
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 25 OFFSET 0
+  Rendered posts/_post.html.erb (7.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 222ms (Views: 220.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-08-16 15:44:37 +0900
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (40.4ms)
+  Rendered posts/new.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 95ms (Views: 93.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2018-08-16 15:44:42 +0900
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 25 OFFSET 0
+  Rendered posts/_post.html.erb (9.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (43.2ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for ::1 at 2018-08-16 15:48:06 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 25 OFFSET 0
+  Rendered posts/_post.html.erb (7.8ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (81.8ms)
+Completed 200 OK in 595ms (Views: 573.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/jquery.infinitescroll.self-76a63d375318ea762c2e64c8e08721f5012dad0d4291b8b360f4034a911f609a.js?body=1" for ::1 at 2018-08-16 15:48:08 +0900
+
+
+Started GET "/posts?page=2" for ::1 at 2018-08-16 15:52:28 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPost Load (0.7ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 25 OFFSET 25
+  Rendered posts/_post.html.erb (9.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (81.4ms)
+Completed 200 OK in 142ms (Views: 140.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts?page=3" for ::1 at 2018-08-16 15:52:34 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 25 OFFSET 50
+  Rendered posts/_post.html.erb (13.6ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 119ms (Views: 117.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts?page=3" for ::1 at 2018-08-16 15:55:15 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mPost Load (7.7ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 25 OFFSET 50
+  Rendered posts/_post.html.erb (38.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (119.9ms)
+Completed 200 OK in 262ms (Views: 239.0ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/posts?page=3" for ::1 at 2018-08-16 15:56:39 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mPost Load (2.7ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 10 OFFSET 20
+  Rendered posts/_post.html.erb (4.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (107.9ms)
+Completed 200 OK in 181ms (Views: 173.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/posts?page=3" for ::1 at 2018-08-16 16:00:44 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 10 OFFSET 20
+  Rendered posts/_post.html.erb (7.2ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (88.0ms)
+Completed 200 OK in 170ms (Views: 167.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts?page=3" for ::1 at 2018-08-16 16:01:17 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mPost Load (2.1ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 60
+  Rendered posts/_post.html.erb (4.5ms)
+  Rendered posts/index.html.erb within layouts/application (73.8ms)
+Completed 200 OK in 530ms (Views: 510.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts?page=3" for ::1 at 2018-08-16 16:01:39 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 60[0m
+  Rendered posts/_post.html.erb (7.1ms)
+  Rendered posts/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 56ms (Views: 53.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts?page=3" for ::1 at 2018-08-16 16:03:21 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mPost Load (0.7ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 60
+  Rendered posts/_post.html.erb (3.9ms)
+  Rendered posts/index.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 71ms (Views: 69.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts?page=2" for ::1 at 2018-08-16 16:03:24 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 30[0m
+  Rendered posts/_post.html.erb (36.7ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (88.6ms)
+Completed 200 OK in 128ms (Views: 125.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts" for ::1 at 2018-08-16 16:03:27 +0900
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 0[0m
+  Rendered posts/_post.html.erb (21.1ms)
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (77.6ms)
+Completed 200 OK in 131ms (Views: 128.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts?page=2" for ::1 at 2018-08-16 16:03:31 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 30[0m
+  Rendered posts/_post.html.erb (19.3ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (75.3ms)
+Completed 200 OK in 110ms (Views: 107.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts?page=2" for ::1 at 2018-08-16 16:04:02 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPost Load (2.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 30
+  Rendered posts/_post.html.erb (8.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (92.9ms)
+Completed 200 OK in 417ms (Views: 394.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/posts?page=2" for ::1 at 2018-08-16 16:05:40 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPost Load (2.2ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 30
+  Rendered posts/_post.html.erb (8.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (87.5ms)
+Completed 200 OK in 567ms (Views: 546.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/jquery.infinitescroll.self-7535527029bb2309afe2b979473e2ee9bffabbef77ea2cb9ff105aee9d29b28e.js?body=1" for ::1 at 2018-08-16 16:05:41 +0900
+
+
+Started GET "/posts?page=2" for ::1 at 2018-08-16 16:06:46 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPost Load (1.9ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 30
+  Rendered posts/_post.html.erb (8.8ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (90.9ms)
+Completed 200 OK in 584ms (Views: 562.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/jquery.infinitescroll.self-f68c6eef4c29c9c9abdd65bccccb03c5522398dff9875c717be6a8deaf4976a5.js?body=1" for ::1 at 2018-08-16 16:06:47 +0900
+
+
+Started GET "/posts?page=2" for ::1 at 2018-08-16 16:07:10 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPost Load (2.2ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 30
+  Rendered posts/_post.html.erb (8.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (87.8ms)
+Completed 200 OK in 583ms (Views: 563.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/jquery.infinitescroll.self-5b0044833d50db04924e5241593c005079c4cf746e8a33ecb45b25de28bc2a6f.js?body=1" for ::1 at 2018-08-16 16:07:11 +0900
+
+
+Started GET "/posts?page=2" for ::1 at 2018-08-16 16:07:28 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPost Load (0.8ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 30
+  Rendered posts/_post.html.erb (11.5ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (68.5ms)
+Completed 200 OK in 101ms (Views: 98.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts?page=2" for ::1 at 2018-08-16 16:11:17 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPost Load (2.5ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 30
+  Rendered posts/_post.html.erb (28.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (97.1ms)
+Completed 200 OK in 272ms (Views: 268.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/jquery.infinitescroll.self-981c01cc6033410a665cafb00890b80647c721a0242d7952b32326f8abf632ac.js?body=1" for ::1 at 2018-08-16 16:11:17 +0900
+
+
+Started GET "/posts?page=2" for ::1 at 2018-08-16 16:11:31 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 30
+  Rendered posts/_post.html.erb (11.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (109.6ms)
+Completed 200 OK in 600ms (Views: 579.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts" for ::1 at 2018-08-16 16:11:40 +0900
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 0
+  Rendered posts/_post.html.erb (20.5ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (58.2ms)
+Completed 200 OK in 91ms (Views: 88.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts?page=2" for ::1 at 2018-08-16 16:11:43 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPost Load (0.7ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 30
+  Rendered posts/_post.html.erb (11.4ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (88.4ms)
+Completed 200 OK in 175ms (Views: 172.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for ::1 at 2018-08-16 16:11:48 +0900
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.8ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 0
+  Rendered posts/_post.html.erb (25.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (74.6ms)
+Completed 200 OK in 119ms (Views: 113.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts?page=2" for ::1 at 2018-08-16 16:11:51 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 30
+  Rendered posts/_post.html.erb (19.7ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (83.6ms)
+Completed 200 OK in 114ms (Views: 111.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts" for ::1 at 2018-08-16 16:11:55 +0900
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.1ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."created_at" ASC LIMIT 30 OFFSET 0
+  Rendered posts/_post.html.erb (22.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (66.9ms)
+Completed 200 OK in 105ms (Views: 102.0ms | ActiveRecord: 1.2ms)
